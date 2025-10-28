@@ -78,7 +78,7 @@ const Contact = () => {
             Get In Touch
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology.
+            I&apos;m always open to discussing new opportunities, interesting projects, or just having a chat about technology.
           </p>
         </motion.div>
 
@@ -96,8 +96,8 @@ const Contact = () => {
                 Let's Connect
               </h3>
               <p className="text-slate-600 dark:text-slate-400 mb-8">
-                Feel free to reach out if you're looking for a developer, have a question, 
-                or just want to connect. I'll get back to you as soon as possible!
+                Feel free to reach out if you&apos;re looking for a developer, have a question, 
+                or just want to connect. I&apos;ll get back to you as soon as possible!
               </p>
             </div>
 
@@ -176,7 +176,7 @@ const Contact = () => {
                   Message Sent!
                 </h3>
                 <p className="text-slate-600 dark:text-slate-400">
-                  Thank you for reaching out. I'll get back to you soon!
+                  Thank you for reaching out. I&apos;ll get back to you soon!
                 </p>
               </motion.div>
             ) : (
@@ -227,7 +227,7 @@ const Contact = () => {
                     {...register('subject', { required: 'Subject is required' })}
                     type="text"
                     className="w-full px-4 py-3 border border-slate-300 dark:border-slate-600 rounded-lg bg-white dark:bg-slate-700 text-slate-900 dark:text-white focus:ring-2 focus:ring-primary dark:focus:ring-accent focus:border-transparent transition-colors"
-                    placeholder="What's this about?"
+                    placeholder="What&apos;s this about?"
                   />
                   {errors.subject && (
                     <p className="text-red-500 text-sm mt-1">{errors.subject.message}</p>

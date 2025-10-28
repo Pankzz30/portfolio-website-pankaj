@@ -90,7 +90,7 @@ const Footer = () => {
                   href="#contact"
                   className="inline-block bg-accent hover:bg-accent/90 text-white px-6 py-2 rounded-lg font-medium transition-colors"
                 >
-                  Let's Work Together
+                  Let&apos;s Work Together
                 </motion.a>
               </div>
             </motion.div>
