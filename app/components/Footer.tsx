@@ -30,6 +30,7 @@ const Footer = () => {
     { name: 'Skills', href: '#skills' },
     { name: 'Experience', href: '#experience' },
     { name: 'Projects', href: '#projects' },
+    { name: 'Publications', href: '#publications' },
     { name: 'Contact', href: '#contact' },
   ]
 
@@ -48,8 +49,8 @@ const Footer = () => {
             >
               <h3 className="text-2xl font-bold text-accent">Pankaj Pramod Koli</h3>
               <p className="text-slate-400 leading-relaxed">
-                Cloud Computing & Full Stack Developer passionate about building 
-                scalable web applications and exploring cutting-edge technologies.
+                Cloud & AI Engineer passionate about building intelligent, scalable systems 
+                using AWS, full-stack development, and AI-driven solutions.
               </p>
               <div className="flex gap-4">
                 {socialLinks.map((social, index) => (

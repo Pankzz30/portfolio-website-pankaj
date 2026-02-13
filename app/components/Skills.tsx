@@ -6,15 +6,15 @@ import { Cloud, Code, Database, Globe, Server, Smartphone, Cpu, GitBranch } from
 const Skills = () => {
   const skillCategories = [
     {
-      title: 'AWS Cloud',
-      icon: <Cloud size={24} />,
-      skills: ['AWS EC2', 'AWS S3', 'AWS IAM', 'CloudWatch'],
-      color: 'from-orange-500 to-yellow-500',
+      title: 'Programming',
+      icon: <Code size={24} />,
+      skills: ['Java', 'C++', 'Python', 'JavaScript'],
+      color: 'from-orange-500 to-red-500',
     },
     {
       title: 'Frontend',
       icon: <Globe size={24} />,
-      skills: ['React.js', 'Next.js', 'JavaScript', 'TypeScript'],
+      skills: ['HTML5', 'CSS3', 'JavaScript', 'React.js'],
       color: 'from-blue-500 to-cyan-500',
     },
     {
@@ -24,22 +24,22 @@ const Skills = () => {
       color: 'from-green-500 to-emerald-500',
     },
     {
+      title: 'Cloud',
+      icon: <Cloud size={24} />,
+      skills: ['AWS EC2', 'AWS S3', 'AWS IAM', 'AWS VPC', 'CloudWatch'],
+      color: 'from-orange-500 to-yellow-500',
+    },
+    {
+      title: 'DevOps',
+      icon: <GitBranch size={24} />,
+      skills: ['Docker', 'GitHub Actions', 'Linux', 'Git'],
+      color: 'from-teal-500 to-cyan-500',
+    },
+    {
       title: 'Database',
       icon: <Database size={24} />,
-      skills: ['MySQL', 'MongoDB', 'SQLite', 'Database Design'],
+      skills: ['MySQL', 'MongoDB', 'Database Design'],
       color: 'from-purple-500 to-pink-500',
-    },
-    {
-      title: 'Mobile Dev',
-      icon: <Smartphone size={24} />,
-      skills: ['Android Studio', 'Java', 'XML UI', 'SQLite'],
-      color: 'from-indigo-500 to-blue-500',
-    },
-    {
-      title: 'DevOps & Tools',
-      icon: <GitBranch size={24} />,
-      skills: ['Git/GitHub', 'Version Control', 'CI/CD', 'Linux'],
-      color: 'from-teal-500 to-cyan-500',
     },
   ]
 

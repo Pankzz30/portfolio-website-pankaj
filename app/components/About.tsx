@@ -7,22 +7,16 @@ import Image from 'next/image'
 const About = () => {
   const education = [
     {
-      institution: 'MIT School of Computing, MIT-ADT University',
-      degree: 'B.Tech CSE - Cloud Computing',
+      institution: 'MIT ADT University',
+      degree: 'B.Tech - Cloud Computing',
       period: '2022–2026',
-      grade: 'CGPA: 7.0',
+      grade: 'CGPA: 7.25',
     },
     {
-      institution: 'Government Polytechnic, Murtizapur',
+      institution: 'Government Polytechnic, Murtijapur',
       degree: 'Diploma in Information Technology',
       period: '2020–2023',
       grade: '78.56%',
-    },
-    {
-      institution: '10th Grade',
-      degree: 'Secondary Education',
-      period: '2020',
-      grade: '89.60%',
     },
   ]
 
@@ -39,26 +33,22 @@ const About = () => {
           <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 dark:text-white mb-4">
             About Me
           </h2>
-          <p className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto mb-6">
-            Enthusiastic Cloud Computing student with a strong foundation in Java, C/C++, 
-            and web technologies. Skilled in AWS (EC2, S3, IAM, CloudWatch), React, Node.js, 
-            Express.js, and MySQL.
-          </p>
-          <div className="bg-gradient-to-r from-primary/10 to-accent/10 rounded-lg p-6 max-w-2xl mx-auto">
-            <h3 className="text-xl font-semibold text-slate-900 dark:text-white mb-2">Career Goal</h3>
-            <p className="text-slate-700 dark:text-slate-300 mb-4">
-              To work as a Cloud Engineer or Full Stack Developer building secure, scalable applications 
-              that solve real-world problems using modern technologies.
+          <div className="text-lg text-slate-600 dark:text-slate-400 max-w-3xl mx-auto space-y-4">
+            <p>
+              I am a B.Tech Cloud Computing student at MIT ADT University with strong foundations in AWS, 
+              full-stack development, and AI-based systems.
             </p>
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href="/Full Stack Developer_Pankaj Koli.pdf"
-              download="Pankaj_Koli_Resume.pdf"
-              className="inline-flex items-center gap-2 btn-primary"
-            >
-              📄 Download Resume
-            </motion.a>
+            <p>
+              I have worked as an AI Engineer Intern at Adosolve Infotech Pvt Ltd, where I developed AI-powered solutions, 
+              integrated models via REST APIs, and explored cloud deployment and MLOps concepts.
+            </p>
+            <p>
+              Previously, I worked as an Android Developer Trainee at Mountreach Solutions, developing secure, 
+              optimized mobile applications with backend integration.
+            </p>
+            <p>
+              I enjoy solving real-world problems using Cloud, AI, and scalable backend architectures.
+            </p>
           </div>
         </motion.div>
 
@@ -77,7 +67,7 @@ const About = () => {
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Education</h3>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 gap-6">
             {education.map((edu, index) => (
               <motion.div
                 key={index}
@@ -129,11 +119,12 @@ const About = () => {
             <h3 className="text-2xl font-bold text-slate-900 dark:text-white">Certifications</h3>
           </div>
           
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {[
               { name: 'AWS Cloud Technical Essentials', logo: 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=300&h=200&fit=crop', color: 'from-orange-500 to-yellow-500' },
-              { name: 'Full Stack Development', logo: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=200&fit=crop', color: 'from-blue-500 to-purple-500' },
-              { name: 'Android Development Training', logo: 'https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=300&h=200&fit=crop', color: 'from-green-500 to-teal-500' },
+              { name: 'Industrial Training Certificate', logo: 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=300&h=200&fit=crop', color: 'from-blue-500 to-purple-500' },
+              { name: 'Full Stack Development Certification', logo: 'https://images.unsplash.com/photo-1607252650355-f7fd0460ccdb?w=300&h=200&fit=crop', color: 'from-green-500 to-teal-500' },
+              { name: 'AWS Academy - Introduction to Cloud Computing', logo: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=300&h=200&fit=crop', color: 'from-indigo-500 to-blue-500' },
             ].map((cert, index) => (
               <motion.div
                 key={index}
@@ -196,17 +187,20 @@ const About = () => {
                 </div>
                 <div className="flex-1">
                   <h4 className="font-bold text-slate-900 dark:text-white mb-2">
-                    Gesture Control Mouse Using Machine Learning
+                    Gesture-Based Virtual Mouse System
                   </h4>
                   <p className="text-slate-600 dark:text-slate-400 text-sm mb-3">
-                    Published in IJEAST (International Journal of Engineering and Advanced Science Technology) - May 2025
+                    Published in IJEAST (International Journal of Engineering and Advanced Science Technology) - April 2025
                   </p>
                   <div className="flex gap-2">
                     <span className="px-2 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 text-xs rounded-full">
-                      Machine Learning
+                      MediaPipe
                     </span>
                     <span className="px-2 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 text-xs rounded-full">
-                      Computer Vision
+                      OpenCV
+                    </span>
+                    <span className="px-2 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 text-xs rounded-full">
+                      Python
                     </span>
                   </div>
                 </div>

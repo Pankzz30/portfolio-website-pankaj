@@ -59,7 +59,7 @@ const Contact = () => {
     {
       icon: <Linkedin size={24} />,
       name: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/pankaj-koli-9a55b2327',
+      href: 'https://www.linkedin.com/in/pankaj-koli-cloud/',
       color: 'hover:text-blue-600',
     },
   ]

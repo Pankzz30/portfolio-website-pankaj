@@ -33,7 +33,7 @@ const Experience = () => {
             {/* Timeline Line */}
             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-primary to-accent"></div>
             
-            {/* Experience Item */}
+            {/* AI Engineer Intern */}
             <motion.div
               initial={{ opacity: 0, x: -50 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -41,26 +41,24 @@ const Experience = () => {
               transition={{ duration: 0.6 }}
               className="relative flex items-start gap-8 pb-12"
             >
-              {/* Timeline Dot */}
               <div className="relative z-10 flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full shadow-lg">
                 <Briefcase className="text-white" size={24} />
               </div>
               
-              {/* Content */}
-              <div className="flex-1 card hover:scale-105">
+              <div className="flex-1 card hover:scale-105 transition-transform duration-300">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
                     <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-1">
-                      Android Developer Intern
+                      AI Engineer Intern
                     </h3>
                     <p className="text-primary dark:text-accent font-semibold mb-2">
-                      Mountreach Solutions Pvt. Ltd
+                      Adosolve Infotech Pvt Ltd, Pune
                     </p>
                   </div>
                   <div className="flex flex-col md:items-end gap-2">
                     <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
                       <Calendar size={16} />
-                      <span>July - August 2022</span>
+                      <span>June 2025 - December 2025</span>
                     </div>
                     <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
                       <MapPin size={16} />
@@ -70,30 +68,99 @@ const Experience = () => {
                 </div>
                 
                 <div className="space-y-3">
-                  <p className="text-slate-700 dark:text-slate-300">
-                    Gained hands-on experience in Android application development using Java and Android Studio.
-                  </p>
-                  
-                  <div className="space-y-2">
-                    <h4 className="font-semibold text-slate-900 dark:text-white">Key Achievements:</h4>
-                    <ul className="space-y-1 text-slate-700 dark:text-slate-300">
-                      <li className="flex items-start gap-2">
-                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                        <span>Developed mobile applications using Android Studio and Java</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                        <span>Worked with SQLite database integration and UI/UX design</span>
-                      </li>
-                      <li className="flex items-start gap-2">
-                        <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                        <span>Collaborated with development team on project requirements</span>
-                      </li>
-                    </ul>
-                  </div>
+                  <ul className="space-y-2 text-slate-700 dark:text-slate-300">
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                      <span>Designed AI-driven features for intelligent automation</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                      <span>Integrated AI models with backend using REST APIs</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                      <span>Converted business requirements into scalable AI solutions</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                      <span>Worked on cloud deployment concepts and basic MLOps</span>
+                    </li>
+                  </ul>
                   
                   <div className="flex flex-wrap gap-2 pt-4">
-                    {['Android Studio', 'Java', 'SQLite', 'XML UI', 'Git'].map((tech, index) => (
+                    {['AI/ML', 'REST APIs', 'Cloud Deployment', 'MLOps', 'Python'].map((tech, index) => (
+                      <span
+                        key={index}
+                        className="px-3 py-1 bg-primary/10 dark:bg-accent/10 text-primary dark:text-accent text-sm rounded-full font-medium"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </div>
+            </motion.div>
+
+            {/* Android Developer Intern */}
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              className="relative flex items-start gap-8"
+            >
+              <div className="relative z-10 flex items-center justify-center w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full shadow-lg">
+                <Briefcase className="text-white" size={24} />
+              </div>
+              
+              <div className="flex-1 card hover:scale-105 transition-transform duration-300">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                  <div>
+                    <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-1">
+                      Android Developer Trainee
+                    </h3>
+                    <p className="text-primary dark:text-accent font-semibold mb-2">
+                      Mountreach Solutions Pvt Ltd, Amravati
+                    </p>
+                  </div>
+                  <div className="flex flex-col md:items-end gap-2">
+                    <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
+                      <Calendar size={16} />
+                      <span>July 2022 - August 2022</span>
+                    </div>
+                    <div className="flex items-center gap-2 text-slate-600 dark:text-slate-400">
+                      <MapPin size={16} />
+                      <span>Remote</span>
+                    </div>
+                  </div>
+                </div>
+                
+                <div className="space-y-3">
+                  <ul className="space-y-2 text-slate-700 dark:text-slate-300">
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                      <span>Developed Android applications using Android SDK</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                      <span>Designed responsive UI with XML & Material Design</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                      <span>Implemented REST API integration</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                      <span>Optimized app performance and secure authentication</span>
+                    </li>
+                    <li className="flex items-start gap-2">
+                      <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
+                      <span>Used Git & GitHub for collaboration</span>
+                    </li>
+                  </ul>
+                  
+                  <div className="flex flex-wrap gap-2 pt-4">
+                    {['Android SDK', 'Java', 'XML', 'Material Design', 'REST APIs', 'Git'].map((tech, index) => (
                       <span
                         key={index}
                         className="px-3 py-1 bg-primary/10 dark:bg-accent/10 text-primary dark:text-accent text-sm rounded-full font-medium"

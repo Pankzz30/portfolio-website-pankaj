@@ -23,20 +23,20 @@ const Hero = () => {
               transition={{ delay: 0.2 }}
               className="text-4xl lg:text-6xl font-bold text-slate-900 dark:text-white"
             >
-              Hi, I&apos;m{' '}
-              <span className="text-primary dark:text-accent">Pankaj</span>
+              Cloud & AI Engineer | Building{' '}
+              <span className="text-primary dark:text-accent">Intelligent Scalable Systems</span>
             </motion.h1>
 
             <div className="text-xl lg:text-2xl text-slate-600 dark:text-slate-300 h-16">
               <TypeAnimation
                 sequence={[
-                  'Cloud Computing Student',
+                  'B.Tech Cloud Computing Student',
+                  2000,
+                  'AI Engineer Intern',
                   2000,
                   'Full Stack Developer',
                   2000,
-                  'AWS Enthusiast',
-                  2000,
-                  'Problem Solver',
+                  'AWS Cloud Enthusiast',
                   2000,
                 ]}
                 wrapper="span"
@@ -51,8 +51,9 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl"
             >
-              Enthusiastic Cloud Computing student with a strong foundation in Java, C/C++, 
-              and web technologies. Passionate about building scalable web apps and cloud-based solutions.
+              Detail-oriented Cloud Computing undergraduate with hands-on experience in AI-driven systems, 
+              full-stack development, and AWS-based cloud solutions. Passionate about building scalable, 
+              production-grade applications.
             </motion.p>
 
             {/* Contact Info */}
@@ -89,12 +90,15 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/Full Stack Developer_Pankaj Koli.pdf"
-                download="Pankaj_Koli_Resume.pdf"
+                href="/Pankaj koli_CV.pdf"
+                download="Pankaj Koli_CV.pdf"
                 className="btn-secondary"
               >
                 Download Resume
               </motion.a>
+              <a href="#contact" className="btn-secondary">
+                Contact Me
+              </a>
             </motion.div>
 
             {/* Social Links */}
@@ -117,7 +121,7 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
-                href="https://www.linkedin.com/in/pankaj-koli-9a55b2327"
+                href="https://www.linkedin.com/in/pankaj-koli-cloud/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-3 bg-slate-200 dark:bg-slate-700 rounded-lg hover:bg-primary hover:text-white transition-colors"
@@ -137,7 +141,7 @@ const Hero = () => {
             <div className="relative w-80 h-80 mx-auto">
               <div className="absolute inset-0 bg-gradient-to-r from-primary to-accent rounded-full blur-2xl opacity-20 animate-pulse"></div>
               <Image
-                src="/Profile_PhotoPankaj-removebg-preview - Copy.jpg"
+                src="/Profile_Photo.jpeg"
                 alt="Pankaj Pramod Koli"
                 width={320}
                 height={320}

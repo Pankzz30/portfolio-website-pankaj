@@ -18,7 +18,7 @@ const Publications = () => {
             Publications
           </h2>
           <p className="text-lg text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
-            Research work and publications in machine learning and computer vision
+            Research work and publications in AI, machine learning, and computer vision
           </p>
         </motion.div>
 
@@ -29,7 +29,7 @@ const Publications = () => {
           transition={{ duration: 0.8 }}
           className="max-w-4xl mx-auto"
         >
-          <div className="card hover:scale-105 bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 dark:border-accent/20">
+          <div className="card hover:scale-105 transition-transform duration-300 bg-gradient-to-r from-primary/5 to-accent/5 border-primary/20 dark:border-accent/20">
             <div className="flex items-start gap-6">
               <div className="p-4 bg-gradient-to-r from-primary to-accent rounded-lg text-white flex-shrink-0">
                 <BookOpen size={32} />
@@ -38,12 +38,12 @@ const Publications = () => {
               <div className="flex-1 space-y-4">
                 <div>
                   <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">
-                    Gesture Control Mouse Using Machine Learning
+                    Gesture-Based Virtual Mouse System
                   </h3>
                   <div className="flex items-center gap-4 text-slate-600 dark:text-slate-400 mb-3">
                     <div className="flex items-center gap-2">
                       <Calendar size={16} />
-                      <span>May 2025</span>
+                      <span>April 2025</span>
                     </div>
                     <span className="text-primary dark:text-accent font-semibold">
                       IJEAST (International Journal of Engineering and Advanced Science Technology)
@@ -53,9 +53,8 @@ const Publications = () => {
                 
                 <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
                   This research paper presents an innovative approach to computer interaction through 
-                  gesture-controlled mouse functionality using machine learning algorithms and computer vision. 
-                  The system utilizes OpenCV for real-time hand gesture recognition, enabling touchless 
-                  computer navigation and control.
+                  gesture-controlled mouse functionality using MediaPipe and OpenCV. The system utilizes 
+                  real-time hand tracking for touchless computer navigation and control, implemented in Python.
                 </p>
                 
                 <div className="space-y-3">
@@ -63,21 +62,21 @@ const Publications = () => {
                   <ul className="space-y-2 text-slate-700 dark:text-slate-300">
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Developed real-time hand gesture recognition system</span>
+                      <span>Built using MediaPipe & OpenCV</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Implemented machine learning algorithms for gesture classification</span>
+                      <span>Real-time hand tracking system</span>
                     </li>
                     <li className="flex items-start gap-2">
                       <div className="w-1.5 h-1.5 bg-accent rounded-full mt-2 flex-shrink-0"></div>
-                      <span>Achieved touchless computer interaction with high accuracy</span>
+                      <span>Implemented in Python</span>
                     </li>
                   </ul>
                 </div>
                 
                 <div className="flex flex-wrap gap-2">
-                  {['Machine Learning', 'OpenCV', 'Computer Vision', 'Python', 'Gesture Recognition'].map((tech, index) => (
+                  {['MediaPipe', 'OpenCV', 'Computer Vision', 'Python', 'Hand Tracking'].map((tech, index) => (
                     <span
                       key={index}
                       className="px-3 py-1 bg-slate-100 dark:bg-slate-700 text-slate-700 dark:text-slate-300 text-sm rounded-md"

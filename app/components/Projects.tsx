@@ -7,31 +7,31 @@ import Image from 'next/image'
 const Projects = () => {
   const projects = [
     {
-      title: 'Gesture Controlled Mouse',
-      description: 'Uses OpenCV & ML for touchless computer interaction. Built with Python and computer vision algorithms for real-time hand gesture recognition.',
+      title: 'Yatri AI - AI-Based Trip Planner',
+      description: 'Built an AI-powered trip planner that generates personalized itineraries based on user preferences, budget, and constraints. Integrated LLM APIs and Google Maps for intelligent recommendations.',
+      image: 'https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=600&h=400&fit=crop',
+      technologies: ['React.js', 'Node.js', 'Express', 'Gemini API', 'Google Maps API'],
+      github: 'https://github.com/Pankzz30',
+      demo: null,
+      category: 'AI & Full Stack',
+    },
+    {
+      title: 'CI/CD Pipeline for Cloud Application',
+      description: 'Designed an automated CI/CD pipeline that builds, tests, creates Docker images, and deploys applications securely to AWS EC2 using SSH-based automation.',
+      image: 'https://images.unsplash.com/photo-1667372393119-3d4c48d07fc9?w=600&h=400&fit=crop',
+      technologies: ['AWS EC2', 'GitHub Actions', 'Docker', 'Linux', 'SSH'],
+      github: 'https://github.com/Pankzz30',
+      demo: null,
+      category: 'Cloud & DevOps',
+    },
+    {
+      title: 'Gesture Controlled Mouse Using Machine Learning',
+      description: 'Developed a real-time gesture recognition system that enables touchless computer interaction using webcam-based hand tracking.',
       image: 'https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=600&h=400&fit=crop',
-      technologies: ['Python', 'OpenCV', 'Machine Learning', 'Computer Vision'],
+      technologies: ['Python', 'MediaPipe', 'OpenCV', 'Machine Learning'],
       github: 'https://github.com/Pankzz30',
       demo: null,
       category: 'Machine Learning',
-    },
-    {
-      title: 'Static Website Hosting on AWS S3',
-      description: 'Hosted a static website using AWS S3, CloudFront, and Route53. Implemented CI/CD pipeline for automated deployments.',
-      image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=400&fit=crop',
-      technologies: ['AWS S3', 'CloudFront', 'Route53', 'CI/CD'],
-      github: 'https://github.com/Pankzz30',
-      demo: '#',
-      category: 'Cloud Computing',
-    },
-    {
-      title: 'Music Player Application',
-      description: 'Android app for audio streaming and playlist management. Features include custom UI, SQLite database, and MediaPlayer API integration.',
-      image: 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=600&h=400&fit=crop',
-      technologies: ['Android Studio', 'Java', 'SQLite', 'MediaPlayer API'],
-      github: 'https://github.com/Pankzz30',
-      demo: null,
-      category: 'Mobile Development',
     },
   ]
 
@@ -85,7 +85,7 @@ const Projects = () => {
             <motion.div
               key={index}
               variants={itemVariants}
-              whileHover={{ y: -10 }}
+              whileHover={{ y: -10, scale: 1.03 }}
               className="card group overflow-hidden"
             >
               {/* Project Image */}
